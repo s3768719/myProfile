@@ -1,2 +1,111 @@
-<h1>placeholder about</h1>
-<a href="index.html">Home</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Bootstrap example from https://www.w3schools.com/bootstrap/default.asp -->
+<title>Sam Bradbury Profile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- start nav -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Sam Brabdury Profile Page</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="about.html">About me</a></li>
+      <li><a href="personality.html">My Profile</a></li>
+      <li><a href="project.html">Project Idea</a></li>
+    </ul>
+  </div>
+</nav>
+<!--end nav -->
+
+<?php
+include("header.php")
+?>
+
+<div class="container" style="margin-top:100px">
+	<ul class="nav nav-pills nav-justified">
+		<li class="active"><a data-toggle="pill" href="#menu1">Who Am I?</a></li>
+		<li><a data-toggle="pill" href="#menu2">What Am I After?</a></li>
+		<li><a data-toggle="pill" href="#menu3">My Ideal Job</a></li>
+	</ul>
+  
+  <div class="tab-content well" style="height:500px;">
+    
+    <div id="menu1" class="tab-pane fade in active">
+      <h3>About Me</h3>
+	  <div class="row">
+			<img src="images/mePhoto.jpg" class="img-thumbnail col-sm-4" alt="moi">
+			<div class="col-sm-1"></div>
+			<table class="col-sm-3">
+				<tr>
+					<th>Name: </th>
+					<td>Sam Bradbury </td>
+				</tr>
+				<tr>
+					<th>Student ID: </th>
+					<td>s3768719</td>
+				</tr>
+				<tr>
+					<th>Email: </th>
+					<td>s3768719@student.rmit.edu.au</td>
+				</tr>
+			</table>
+			<p class="col-sm-4"></p>
+		</div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+		<div class="well">
+			<h3>Column 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		</div>
+		</div>
+		<div class="col-sm-4">
+		<div class="well">
+			<h3>Column 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		</div>
+		</div>
+		<div class="col-sm-4">
+		<div class="well">
+			<h3>Column 3</h3>        
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
