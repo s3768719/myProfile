@@ -43,29 +43,72 @@ include("header.php")
 
 <div class="container">
 	<ul class="nav nav-pills nav-justified">
-		<li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-		<li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
-		<li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
-		<li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+		<li class="active"><a data-toggle="pill" href="#home">Overview</a></li>
+		<li><a data-toggle="pill" href="#menu1">Motivation</a></li>
+		<li><a data-toggle="pill" href="#menu2">Description</a></li>
+		<li><a data-toggle="pill" href="#menu3">Tools and Technologies</a></li>
+		<li><a data-toggle="pill" href="#menu4">Skills Required</a></li>
+		<li><a data-toggle="pill" href="#menu5">Outcome</a></li>
 	</ul>
   
   <div class="tab-content well" style="min-height:1000px;">
     <div id="home" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h3>Overview</h3>
+    <p>An independent price comparison website for games workshop miniatures.</p>
+	<p>The site will be like other price comparison websites such as;</p>
+	<ul style="list-style-type:none; font-weight: normal;">
+		<li><a href="https://au.pcpartpicker.com/" target="_blank">pc part picker</a> – pc hardware parts selector and comparison</li>
+		<li><a href="http://www.cheapshark.com/" target="_blank">cheap shark</a> – pc games price comparison</li>
+		<li><a href="https://www.iselect.com.au/" target="_blank">iSelect</a> – insurance, loan and utility policy comparison</li>
+		<li><a href="https://www.trivago.com.au/" target="_blank">trivago</a> - hotel prices</li>
+	</ul>
+	<p>The site will give consumers the ability to compare prices get the best deal for their miniatures purchases.</p>
     </div>
     <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h3>Motivation</h3>
+      <p>I am passionate about a hobby called Warhammer 40,000 (or just 40k for short).<br>
+	  <br>It is a table top wargame set in the 41st millennium where two players have an army of miniatures that represent them. Then they take turns using a set of rules created by Games Workshop involving tape measures and dice. There are many different tactics and rules that dictate the game as well as missions and objectives that players need to achieve to gain victory.<br>
+	  <br>There are various levels of play from the most basic of casual play to tournaments involving multiple people well as being involved in the ITC (Independent Tournament Scene) where players compete with other players all over the world for getting the most points. The problem with the game is that the miniatures can be very expensive. Especially if you want to build a sizable army with them. The miniatures can be purchased from Games Workshop or from independent retailers. These retailers get special discounts from Games Workshop and sometimes they can pass these onto the consumer.<br>
+	  <br>This is where the web site will come in.<br>
+</p>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <h3>Description</h3>
+      <p>The site will have an updating database of all the independent retailers around the country and will offer the best price to the user. The user can search for items directly or just browse the various categories. The user can also limit search results by region and if a store has an online webstore or is only an online shop.<br>
+	  <br>The main page of the site will have a search bar at the top, categories to the left and the bulk of the screen will display the best deals of the day, such as the newest items and any major sales happening that day.<br>
+	  </p>
+	  <!-- mockup site  -->
+	  <div class="Container" style="background-color:white; min-height:700px">
+	  <img src="images/mockOne.jpg" class="img-thumbnail" alt="mock">
+	  <!-- mockup site  -->
+	  </div>
     </div>
     <div id="menu3" class="tab-pane fade">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <h3>Tools and Technologies</h3>
+      <p>The website would be like other site comparison sites. It will of course be using HTML5 and CSS for basic content and styling. It would also be using php and SQL for server-side mark-up to make use of the server database.<br>
+	  <br>A web-scraping service will be required to obtain the relevant data from all the websites to provide up to the second price comparison. A local company that can provide this is <a href="http://www.data-scraping.com.au/" target="_blank">data-scraping</a>.<br>
+	  <br>For data storage, it would be best to use scalable cloud storage with a reliable provider to have the best data integrity and security. A local server can easily become corrupted or compromised unless a substantial investment was made.<br>
+	  </p>
     </div>
+	<div id="menu4" class="tab-pane fade">
+		<h3>Skills Required</h3>
+		<p>To create this site, there must be people involved that have the following skills</P>
+		<ul style="list-style-type:none; font-weight: normal;">
+			<li>HTML5, CSS, PHP and SQL knowledge</li>
+			<li>Database maintenance</li>
+			<li>Team management</li>
+			<li>Technology management with the web-scraping and cloud hosting companies</li>
+		</ul>
+		<p>There must also be communication between the team and the retailers. As this is a comparison site based on referral links for income, a positive relationship is a must.</p>
+
+    </div>
+	<div id="menu5" class="tab-pane fade">
+      <h3>Outcome</h3>
+      <p>Once the site is operational, a consumer will be able to visit and look up a product they are after and then go straight to the respective retailer for the item at that price. The link will be a referral link that will inform the retailer that the buyer came from the website and then pay a commission based on the sale.<br>
+	  <br>This solves the initial problem of finding the best price for the miniatures that are generally overpriced in Australia.<br>
+	  <br>Future iterations of the site will allow users to create army lists on the site and see the best prices from a lot of independent retailers. It will also expand into other games from different publishers such as Privateer Press and Fantasy Flight Games.<br>
+	  </p>	  
+	</div>
   </div>
 </div>
 
